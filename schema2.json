@@ -1,0 +1,47 @@
+{
+  url: "rest/api/url",
+  form: {
+    tradeName: {
+      order: 1,
+      type: "fieldset",
+      legend: "Product Information",
+      content: {
+        genericName: {
+          order: 1,
+          type: "input",
+          required: true,
+          label: "Generic Name",
+          placeholder: "e.g. Generic Name"
+        },
+        tradeName: {
+          order: 2,
+          type: "input",
+          required: true,
+          label: "Trade Name",
+          placeholder: "e.g. Trade Name"
+        },
+      }
+    },
+    Distribution List: [{
+      order: 2,
+      type: "fieldset",
+      legend: "Agency Information",
+      content: {
+        description: {
+          order: 1,
+          type: "p",
+          content: "Please note..."
+        },
+        agencyName: {
+          order: 2,
+          type: "input",
+          required: true,
+          label: "HQ team",
+          placeholder: "e.g. Team name",
+          classes: "autocomplete-group"
+        }
+      },
+      addMoreButton: "Indications" //Label of button for adding more of those type
+    }]
+  }
+}

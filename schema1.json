@@ -1,0 +1,42 @@
+{
+  url: "rest/api/url",
+  form: {
+    productInformation: {
+      order: 1,
+      type: "fieldset",
+      legend: "Product Information",
+      content: {
+        tradeName: {
+          type: "input",
+          required: true,
+          label: "Trade Name",
+          placeholder: "e.g. Trade Name"
+        },
+        indicators: [{
+          type: "input",
+          label: "Indicators",
+          addMoreButton: "Indications" //Label of button for adding more of those type
+        }]
+      }
+    },
+    agencyInformation: [{
+      order: 3,
+      type: "fieldset",
+      legend: "Agency Information",
+      content: {
+        agencyName: {
+          type: "input",
+          required: true,
+          label: "Agency Name",
+          placeholder: "e.g. Agency Name"
+        },
+        indicators: [{
+          type: "input",
+          label: "\"Released\" work (specify agencies)",
+          addMoreButton: "Add agency" //Label of button for adding more of those type
+        }]
+      },
+      addMoreButton: "Indications" //Label of button for adding more of those type
+    }]
+  }
+}
